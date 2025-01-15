@@ -51,5 +51,15 @@ public class EmpDataBaseOperation {
 	empSalary.forEach(System.out::println);
 	
 	}
+	
+	public void getEmployeeByJob(String jobTitle) {
+	List<Employee> job	=empRepo.findByEmpjob(jobTitle);
+	job.forEach(System.out::println);
+	}
+	public void getEmployeeByJobAndSalary(String jobTitle,int salary) {
+	List<Employee> jobandsal	   =empRepo.findByEmpjobAndEmpsalGreaterThan(jobTitle, salary);
+	jobandsal.forEach(System.out::println);
+	}
+	
 
 }

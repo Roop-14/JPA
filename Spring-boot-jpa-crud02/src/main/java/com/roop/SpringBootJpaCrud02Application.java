@@ -17,8 +17,9 @@ public class SpringBootJpaCrud02Application {
 	  //  baseOperation.empInsertAllOperation();
 	   // baseOperation.getEmployeeInfoById();
 	    
-	    baseOperation.getEmployeeBySalary(40000);
-	    
+	 //   baseOperation.getEmployeeBySalary(40000);
+	   // baseOperation.getEmployeeByJob("Designer");
+	    baseOperation.getEmployeeByJobAndSalary("Developer", 40000);
 	}
 
 }

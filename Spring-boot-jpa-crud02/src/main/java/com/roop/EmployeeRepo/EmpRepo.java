@@ -10,5 +10,6 @@ public interface EmpRepo extends JpaRepository<Employee, Integer>{
 	
 	List<Employee> findByEmpsal(int salary);
 	List<Employee> findByEmpjob(String job);//property name=empjob
+	List<Employee> findByEmpjobAndEmpsalGreaterThan(String job,int sal);
 
 }
